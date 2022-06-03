@@ -24,4 +24,4 @@ CREATE TABLE Teacher_Pupil(
 SELECT DISTINCT t1.* FROM Teacher_Pupil
 INNER JOIN Pupil ON Pupil.id = Teacher_Pupil.pupil_id
 INNER JOIN Teacher t1 ON t1.id = Teacher_Pupil.teacher_id
-WHERE Pupil.first_name = 'saba';
+WHERE Pupil.first_name = 'გიორგი';
