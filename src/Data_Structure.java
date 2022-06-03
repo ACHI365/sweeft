@@ -45,20 +45,4 @@ public class  Data_Structure<T> {
         }
         System.out.println();
     }
-
-    public static void main(String[] args) throws Exception {
-        Data_Structure<Integer> DS = new Data_Structure<>();
-
-        DS.add(5);
-        DS.add(12);
-        DS.add(13);
-
-        DS.print();
-        DS.remove(12);
-        DS.print();
-        DS.remove(13);
-        DS.print();
-
-
-    }
 }
