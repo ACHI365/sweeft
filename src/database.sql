@@ -20,18 +20,6 @@ CREATE TABLE Teacher_Pupil(
 	teacher_id INTEGER REFERENCES Teacher(id) NOT NULL,
 	UNIQUE(pupil_id, teacher_id)
 );
---
---
---INSERT INTO Pupil(first_name, last_name, gender, class) VALUES('saba', 'zedginidze', 'male', 'mexute');
---INSERT INTO Pupil(first_name, last_name, gender, class) VALUES('გიორგი', 'zedginidze', 'female', 'mexute');
---INSERT INTO Pupil(first_name, last_name, gender, class) VALUES('გიორგი', 'zedginidze', 'male', 'meeqvse');
---
---INSERT INTO Teacher(first_name, last_name, gender, subject) VALUES('saba', 'mindadze', 'male', 'science');
---INSERT INTO Teacher(first_name, last_name, gender, subject) VALUES('saba', 'mindadze', 'male', 'MATH');
---
---INSERT INTO Teacher_Pupil(pupil_id, teacher_id) VALUES(1, 1);
---INSERT INTO Teacher_Pupil(pupil_id, teacher_id) VALUES(1, 1);
---INSERT INTO Teacher_Pupil(pupil_id, teacher_id) VALUES(3, 2);
 
 SELECT DISTINCT t1.* FROM Teacher_Pupil
 INNER JOIN Pupil ON Pupil.id = Teacher_Pupil.pupil_id
